@@ -16,7 +16,11 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
+<body style="  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    font: Arial;
+    Color: White;
+    margin-top: 2%">
+
     @*<nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -44,7 +48,7 @@
         <div class="overlay"></div>
 
         <!-- Sidebar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation"  style="background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
 
                 <li><a asp-area="" asp-controller="SpacerCards" asp-action="Index">Spacer Card Index</a></li>
@@ -86,10 +90,10 @@
 
     <div class="container body-content">
         @RenderBody()
-       
-        @*<footer>
+        <hr />
+        <footer>
             <p>&copy; 2017 - FSpacer</p>
-        </footer>*@
+        </footer>
     </div>
 
     <environment include="Development">
@@ -114,5 +118,7 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+
+   
 </body>
 </html>
